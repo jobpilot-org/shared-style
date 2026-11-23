@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light dark;
+
+  /* Farben – Colors.light / Colors.dark */
+  --jp-text: light-dark(#202923, #f1f4ef);
+  --jp-text-secondary: light-dark(#68736b, #a9b3ab);
+  --jp-background: light-dark(#f4f6f2, #151a17);
+  --jp-background-element: light-dark(#ffffff, #202722);
+  --jp-background-selected: light-dark(#e5eae4, #303a33);
+  --jp-border: light-dark(#dde3dc, #2a332d);
+  /* Flächen mit --jp-on-accent darauf (Buttons, aktive Filter) */
+  --jp-accent: light-dark(#176b4a, #1e7f58);
+  --jp-on-accent: #ffffff;
+  /* Akzent für Text und Icons auf normalem Hintergrund */
+  --jp-accent-text: light-dark(#176b4a, #6ccb9b);
+  --jp-accent-soft: light-dark(#e4eee7, #1d3328);
+  --jp-accent-soft-text: light-dark(#203d2e, #e2f1e9);
+  --jp-accent-soft-muted: light-dark(#52695b, #a9c4b4);
+  --jp-accent-soft-eyebrow: light-dark(#50715f, #8fd9b0);
+  --jp-danger: light-dark(#b65345, #e08a7c);
+  --jp-overlay: light-dark(rgb(14 22 17 / 0.42), rgb(0 0 0 / 0.55));
+  --jp-chart-bar: light-dark(#176b4a, #4cb07d);
+  --jp-chart-bar-muted: light-dark(#5f9982, #3c7d5b);
+  --jp-chart-grid: light-dark(#dde3dc, #2a332d);
+
+  /* Statusfarben – StatusColors; Text erfüllt WCAG AA auf dem jeweiligen Hintergrund */
+  --jp-status-saved-bg: light-dark(#eceeeb, #262c28);
+  --jp-status-saved-text: light-dark(#56605a, #b5bdb7);
+  --jp-status-saved-dot: light-dark(#8a948d, #7e8781);
+  --jp-status-applied-bg: light-dark(#e9eff8, #1f2a3a);
+  --jp-status-applied-text: light-dark(#45658e, #a9c2e3);
+  --jp-status-applied-dot: #6d8eb8;
+  --jp-status-screening-bg: light-dark(#e6f0f2, #1c2e31);
+  --jp-status-screening-text: light-dark(#2f6570, #9bcfd8);
+  --jp-status-screening-dot: #4c8d99;
+  --jp-status-interview-bg: light-dark(#e2f1e9, #1d3328);
+  --jp-status-interview-text: light-dark(#286448, #8fd9b0);
+  --jp-status-interview-dot: #3e8a63;
+  --jp-status-final-bg: light-dark(#ddefe3, #18392a);
+  --jp-status-final-text: light-dark(#1f5a3d, #a6e6c2);
+  --jp-status-final-dot: light-dark(#2e7a52, #46a26f);
+  --jp-status-offer-bg: light-dark(#fff0d8, #3a2e1a);
+  --jp-status-offer-text: light-dark(#8a5b18, #f0c27a);
+  --jp-status-offer-dot: #d19037;
+  --jp-status-rejected-bg: light-dark(#f8e8e5, #3a2523);
+  --jp-status-rejected-text: light-dark(#99574e, #e8a89d);
+  --jp-status-rejected-dot: #c9786a;
+  --jp-status-withdrawn-bg: light-dark(#efecea, #2c2825);
+  --jp-status-withdrawn-text: light-dark(#6b625c, #c2b8b1);
+  --jp-status-withdrawn-dot: light-dark(#9c928b, #8c827b);
+
+  /* Firmen-Avatare – AvatarColors, gewählt nach dem ersten Buchstaben */
+  --jp-avatar-0: light-dark(#e4eee7, #1d3328);
+  --jp-avatar-1: light-dark(#f5e9dd, #3a2e22);
+  --jp-avatar-2: light-dark(#e5eaf4, #232c3a);
+  --jp-avatar-3: light-dark(#f2e6e8, #382629);
+  --jp-avatar-text: light-dark(#294237, #e2f1e9);
+
+  /* Schriften – Serife nur für große Titel (SerifFont), sonst Systemschrift */
+  --jp-font-serif: Georgia, 'Times New Roman', serif;
+  --jp-font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Layout – CONTENT_MAX_WIDTH bzw. breite Ansichten wie das Board */
+  --jp-content-width: 760px;
+  --jp-wide-width: 1400px;
+}

@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--jp-font-sans);
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--jp-text);
+  background: var(--jp-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--jp-accent-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--jp-accent-text);
+  outline-offset: 2px;
+}
+
+.jp-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

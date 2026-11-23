@@ -1,0 +1,51 @@
+{
+  "name": "@jobpilot-org/shared-style",
+  "version": "0.1.0",
+  "description": "Gemeinsames Erscheinungsbild für jobpilot: Design-Tokens, Grundlagen und Bausteine als CSS",
+  "keywords": [
+    "jobpilot",
+    "css",
+    "design-tokens"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "jobpilot."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobpilot-org/shared-style.git"
+  },
+  "exports": {
+    ".": "./src/index.css",
+    "./index.css": "./src/index.css",
+    "./tokens.css": "./src/tokens.css",
+    "./base.css": "./src/base.css",
+    "./components.css": "./src/components.css",
+    "./assets/icon.png": "./assets/icon.png",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "assets",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm test && npm run format:check",
+    "prepublishOnly": "npm run check"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.9"
+  }
+}

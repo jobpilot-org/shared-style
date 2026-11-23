@@ -1,0 +1,8 @@
+/*
+ * jobpilot – gemeinsames Erscheinungsbild für desktop, web, admin und extension.
+ * Vorbild ist die mobile-app: Farben aus `src/theme/colors.ts`, Maße aus `src/ui/*`.
+ */
+
+@import './tokens.css';
+@import './base.css';
+@import './components.css';
